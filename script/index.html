@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Feedback</title>
+  <meta name="author" content="anonymous" />
+  <meta name="description" content="Feedback de reclamações, críticas e elogios." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="./css/style.css"
+</head>
+
+<body>
+  <header>
+    <h1>RECLAMAÇÕES</h1>
+  </header>
+  <main>
+    
+    <form action="https://formspree.io/f/meqyekvp" method="POST">
+      <label>
+        O seu email &downarrow;
+        <input placeholder="Digite seu email..." type="email" name="email" required>
+      </label>
+      <label>
+        Escreva o seu Feedback &downarrow;
+        <textarea placeholder="Digite o seu Feedback..." style="height: 250px;" name="message" required></textarea>
+      </label>
+      
+      <!-- O botão tipo submit envia o feedback para a caixa de emails -->
+      <button type="submit">ENVIAR</button>
+      
+    </form>
+  </main>
+  
+  <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script async src="./js/script.js">
+  </script>
+</body>
+
+</html>
